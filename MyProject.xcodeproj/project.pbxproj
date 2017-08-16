@@ -7,25 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE0514631EBC30D2005A90B5 /* NSObject+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05145D1EBC30D2005A90B5 /* NSObject+Common.m */; };
+		BE0514641EBC30D2005A90B5 /* NSString+PJR.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05145F1EBC30D2005A90B5 /* NSString+PJR.m */; };
+		BE0514651EBC30D2005A90B5 /* NSString+QRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0514611EBC30D2005A90B5 /* NSString+QRCode.m */; };
+		BE05146B1EBC3309005A90B5 /* AppDelegate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05146A1EBC3309005A90B5 /* AppDelegate+Category.m */; };
 		BEB37D9F1EA760C200FE155F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB37D9E1EA760C200FE155F /* main.m */; };
 		BEB37DA21EA760C200FE155F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB37DA11EA760C200FE155F /* AppDelegate.m */; };
-		BEB37DA51EA760C200FE155F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB37DA41EA760C200FE155F /* ViewController.m */; };
 		BEB37DA81EA760C200FE155F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB37DA61EA760C200FE155F /* Main.storyboard */; };
 		BEB37DAA1EA760C200FE155F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB37DA91EA760C200FE155F /* Assets.xcassets */; };
 		BEB37DAD1EA760C200FE155F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB37DAB1EA760C200FE155F /* LaunchScreen.storyboard */; };
+		BEB37DC01EA7627A00FE155F /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB37DBF1EA7627A00FE155F /* BaseModel.m */; };
+		BEB37DC31EA762AC00FE155F /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB37DC21EA762AC00FE155F /* BaseNetManager.m */; };
+		BEB37DC81EA763A900FE155F /* ScrollDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB37DC71EA763A900FE155F /* ScrollDisplayViewController.m */; };
+		BEB37E4C1EA8A8D000FE155F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB37E4B1EA8A8D000FE155F /* ViewController.m */; };
+		BEB37E651EADF37A00FE155F /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB37E641EADF37A00FE155F /* BaseViewModel.m */; };
+		BEB37E991EAF4E7900FE155F /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB37E981EAF4E7900FE155F /* libsqlite3.0.tbd */; };
+		F400F60A8ADE41586FE89506 /* libPods-MyProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6211ADE1C455B4ABF3B8907 /* libPods-MyProject.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7BC8A589A3619F435457CCB6 /* Pods-MyProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyProject/Pods-MyProject.debug.xcconfig"; sourceTree = "<group>"; };
+		B7135650771331DC04E72018 /* Pods-MyProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyProject/Pods-MyProject.release.xcconfig"; sourceTree = "<group>"; };
+		BE05145C1EBC30D2005A90B5 /* NSObject+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Common.h"; sourceTree = "<group>"; };
+		BE05145D1EBC30D2005A90B5 /* NSObject+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Common.m"; sourceTree = "<group>"; };
+		BE05145E1EBC30D2005A90B5 /* NSString+PJR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PJR.h"; sourceTree = "<group>"; };
+		BE05145F1EBC30D2005A90B5 /* NSString+PJR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PJR.m"; sourceTree = "<group>"; };
+		BE0514601EBC30D2005A90B5 /* NSString+QRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+QRCode.h"; sourceTree = "<group>"; };
+		BE0514611EBC30D2005A90B5 /* NSString+QRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+QRCode.m"; sourceTree = "<group>"; };
+		BE0514691EBC3309005A90B5 /* AppDelegate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Category.h"; sourceTree = "<group>"; };
+		BE05146A1EBC3309005A90B5 /* AppDelegate+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Category.m"; sourceTree = "<group>"; };
 		BEB37D9A1EA760C200FE155F /* MyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB37D9E1EA760C200FE155F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BEB37DA01EA760C200FE155F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BEB37DA11EA760C200FE155F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BEB37DA31EA760C200FE155F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BEB37DA41EA760C200FE155F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BEB37DA71EA760C200FE155F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BEB37DA91EA760C200FE155F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEB37DA91EA760C200FE155F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		BEB37DAC1EA760C200FE155F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEB37DAE1EA760C200FE155F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEB37DBD1EA7623400FE155F /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		BEB37DBE1EA7627A00FE155F /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		BEB37DBF1EA7627A00FE155F /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		BEB37DC11EA762AC00FE155F /* BaseNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetManager.h; sourceTree = "<group>"; };
+		BEB37DC21EA762AC00FE155F /* BaseNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetManager.m; sourceTree = "<group>"; };
+		BEB37DC41EA7630B00FE155F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		BEB37DC61EA763A900FE155F /* ScrollDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollDisplayViewController.h; sourceTree = "<group>"; };
+		BEB37DC71EA763A900FE155F /* ScrollDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollDisplayViewController.m; sourceTree = "<group>"; };
+		BEB37E4A1EA8A8D000FE155F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BEB37E4B1EA8A8D000FE155F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BEB37E631EADF37A00FE155F /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
+		BEB37E641EADF37A00FE155F /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		BEB37E961EAF410200FE155F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		BEB37E971EAF410200FE155F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		BEB37E981EAF4E7900FE155F /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		D6211ADE1C455B4ABF3B8907 /* libPods-MyProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +67,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB37E991EAF4E7900FE155F /* libsqlite3.0.tbd in Frameworks */,
+				F400F60A8ADE41586FE89506 /* libPods-MyProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A4B2BBA450346DC9361F6F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEB37E981EAF4E7900FE155F /* libsqlite3.0.tbd */,
+				D6211ADE1C455B4ABF3B8907 /* libPods-MyProject.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1CEF35BF4F93DACFE1A7904D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7BC8A589A3619F435457CCB6 /* Pods-MyProject.debug.xcconfig */,
+				B7135650771331DC04E72018 /* Pods-MyProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BEB37D911EA760C200FE155F = {
 			isa = PBXGroup;
 			children = (
 				BEB37D9C1EA760C200FE155F /* MyProject */,
 				BEB37D9B1EA760C200FE155F /* Products */,
+				1CEF35BF4F93DACFE1A7904D /* Pods */,
+				1A4B2BBA450346DC9361F6F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,14 +114,17 @@
 		BEB37D9C1EA760C200FE155F /* MyProject */ = {
 			isa = PBXGroup;
 			children = (
+				BEB37DBC1EA761DD00FE155F /* Define */,
+				BEB37DBB1EA761D400FE155F /* Model */,
+				BEB37DBA1EA761CF00FE155F /* NetManager */,
+				BEB37DB91EA761C600FE155F /* Resource */,
+				BEB37DB81EA761C200FE155F /* Util */,
+				BEB37DB71EA761BD00FE155F /* Vendor */,
+				BEB37DB61EA761B800FE155F /* View */,
+				BEB37DB51EA761B300FE155F /* ViewController */,
+				BEB37DB41EA761AC00FE155F /* ViewModel */,
 				BEB37DA01EA760C200FE155F /* AppDelegate.h */,
 				BEB37DA11EA760C200FE155F /* AppDelegate.m */,
-				BEB37DA31EA760C200FE155F /* ViewController.h */,
-				BEB37DA41EA760C200FE155F /* ViewController.m */,
-				BEB37DA61EA760C200FE155F /* Main.storyboard */,
-				BEB37DA91EA760C200FE155F /* Assets.xcassets */,
-				BEB37DAB1EA760C200FE155F /* LaunchScreen.storyboard */,
-				BEB37DAE1EA760C200FE155F /* Info.plist */,
 				BEB37D9D1EA760C200FE155F /* Supporting Files */,
 			);
 			path = MyProject;
@@ -74,9 +133,112 @@
 		BEB37D9D1EA760C200FE155F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BEB37DAE1EA760C200FE155F /* Info.plist */,
 				BEB37D9E1EA760C200FE155F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEB37DB41EA761AC00FE155F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BEB37E631EADF37A00FE155F /* BaseViewModel.h */,
+				BEB37E641EADF37A00FE155F /* BaseViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BEB37DB51EA761B300FE155F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BEB37E4A1EA8A8D000FE155F /* ViewController.h */,
+				BEB37E4B1EA8A8D000FE155F /* ViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BEB37DB61EA761B800FE155F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BEB37DB71EA761BD00FE155F /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		BEB37DB81EA761C200FE155F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				BEB37DC51EA7637C00FE155F /* ScrollDisplay */,
+				BEB37DC91EA763E700FE155F /* Category */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		BEB37DB91EA761C600FE155F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BEB37DA61EA760C200FE155F /* Main.storyboard */,
+				BEB37DA91EA760C200FE155F /* Assets.xcassets */,
+				BEB37DAB1EA760C200FE155F /* LaunchScreen.storyboard */,
+				BEB37DC41EA7630B00FE155F /* PrefixHeader.pch */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		BEB37DBA1EA761CF00FE155F /* NetManager */ = {
+			isa = PBXGroup;
+			children = (
+				BEB37DC11EA762AC00FE155F /* BaseNetManager.h */,
+				BEB37DC21EA762AC00FE155F /* BaseNetManager.m */,
+			);
+			path = NetManager;
+			sourceTree = "<group>";
+		};
+		BEB37DBB1EA761D400FE155F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BEB37DBE1EA7627A00FE155F /* BaseModel.h */,
+				BEB37DBF1EA7627A00FE155F /* BaseModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BEB37DBC1EA761DD00FE155F /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				BEB37DBD1EA7623400FE155F /* Constants.h */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		BEB37DC51EA7637C00FE155F /* ScrollDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				BEB37DC61EA763A900FE155F /* ScrollDisplayViewController.h */,
+				BEB37DC71EA763A900FE155F /* ScrollDisplayViewController.m */,
+			);
+			path = ScrollDisplay;
+			sourceTree = "<group>";
+		};
+		BEB37DC91EA763E700FE155F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BE0514691EBC3309005A90B5 /* AppDelegate+Category.h */,
+				BE05146A1EBC3309005A90B5 /* AppDelegate+Category.m */,
+				BE05145C1EBC30D2005A90B5 /* NSObject+Common.h */,
+				BE05145D1EBC30D2005A90B5 /* NSObject+Common.m */,
+				BE05145E1EBC30D2005A90B5 /* NSString+PJR.h */,
+				BE05145F1EBC30D2005A90B5 /* NSString+PJR.m */,
+				BE0514601EBC30D2005A90B5 /* NSString+QRCode.h */,
+				BE0514611EBC30D2005A90B5 /* NSString+QRCode.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEB37DB11EA760C200FE155F /* Build configuration list for PBXNativeTarget "MyProject" */;
 			buildPhases = (
+				865BE1D2BFA56FEAF160B022 /* [CP] Check Pods Manifest.lock */,
 				BEB37D961EA760C200FE155F /* Sources */,
 				BEB37D971EA760C200FE155F /* Frameworks */,
 				BEB37D981EA760C200FE155F /* Resources */,
+				BFC57BF7649657B46EDBF341 /* [CP] Embed Pods Frameworks */,
+				95535A60D9CD564744720E70 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,14 +310,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		865BE1D2BFA56FEAF160B022 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		95535A60D9CD564744720E70 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyProject/Pods-MyProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFC57BF7649657B46EDBF341 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyProject/Pods-MyProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BEB37D961EA760C200FE155F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEB37DA51EA760C200FE155F /* ViewController.m in Sources */,
+				BEB37DC31EA762AC00FE155F /* BaseNetManager.m in Sources */,
+				BEB37E651EADF37A00FE155F /* BaseViewModel.m in Sources */,
+				BEB37E4C1EA8A8D000FE155F /* ViewController.m in Sources */,
 				BEB37DA21EA760C200FE155F /* AppDelegate.m in Sources */,
+				BE0514631EBC30D2005A90B5 /* NSObject+Common.m in Sources */,
+				BE0514651EBC30D2005A90B5 /* NSString+QRCode.m in Sources */,
+				BE05146B1EBC3309005A90B5 /* AppDelegate+Category.m in Sources */,
+				BEB37DC01EA7627A00FE155F /* BaseModel.m in Sources */,
+				BEB37DC81EA763A900FE155F /* ScrollDisplayViewController.m in Sources */,
 				BEB37D9F1EA760C200FE155F /* main.m in Sources */,
+				BE0514641EBC30D2005A90B5 /* NSString+PJR.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,16 +384,20 @@
 			isa = PBXVariantGroup;
 			children = (
 				BEB37DA71EA760C200FE155F /* Base */,
+				BEB37E961EAF410200FE155F /* zh-Hans */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		BEB37DAB1EA760C200FE155F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BEB37DAC1EA760C200FE155F /* Base */,
+				BEB37E971EAF410200FE155F /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -182,6 +407,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -230,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -270,8 +497,11 @@
 		};
 		BEB37DB21EA760C200FE155F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BC8A589A3619F435457CCB6 /* Pods-MyProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/will/Desktop/MyProject/MyProject/Resource/PrefixHeader.pch;
 				INFOPLIST_FILE = MyProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.will.MyProject;
@@ -281,8 +511,11 @@
 		};
 		BEB37DB31EA760C200FE155F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7135650771331DC04E72018 /* Pods-MyProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/will/Desktop/MyProject/MyProject/Resource/PrefixHeader.pch;
 				INFOPLIST_FILE = MyProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.will.MyProject;
@@ -309,6 +542,7 @@
 				BEB37DB31EA760C200FE155F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
