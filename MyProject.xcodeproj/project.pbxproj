@@ -199,57 +199,75 @@
 			path = "歌单";
 			sourceTree = "<group>";
 		};
-		BE76E1781F44252200E28B17 /* 动态 */ = {
+		BE76E17F1F4429A200E28B17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE76E1801F4429B400E28B17 /* 动态 */,
+				BE76E1811F4429B400E28B17 /* 我的 */,
+				BE76E1821F4429B400E28B17 /* 音乐 */,
+			);
+			name = View;
+			path = MyProject/View;
+			sourceTree = SOURCE_ROOT;
+		};
+		BE76E1801F4429B400E28B17 /* 动态 */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = "动态";
 			sourceTree = "<group>";
 		};
-		BE76E1791F44252200E28B17 /* 我的 */ = {
+		BE76E1811F4429B400E28B17 /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = "我的";
 			sourceTree = "<group>";
 		};
-		BE76E17A1F44252200E28B17 /* 音乐 */ = {
+		BE76E1821F4429B400E28B17 /* 音乐 */ = {
 			isa = PBXGroup;
 			children = (
-				BE76E17B1F44252200E28B17 /* K歌 */,
-				BE76E17C1F44252200E28B17 /* 推荐 */,
-				BE76E17D1F44252200E28B17 /* 榜单 */,
-				BE76E17E1F44252200E28B17 /* 歌单 */,
+				BE76E1831F4429B400E28B17 /* K歌 */,
+				BE76E1841F4429B400E28B17 /* 推荐 */,
+				BE76E1851F4429B400E28B17 /* 榜单 */,
+				BE76E1861F4429B400E28B17 /* 歌单 */,
 			);
 			path = "音乐";
 			sourceTree = "<group>";
 		};
-		BE76E17B1F44252200E28B17 /* K歌 */ = {
+		BE76E1831F4429B400E28B17 /* K歌 */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = "K歌";
 			sourceTree = "<group>";
 		};
-		BE76E17C1F44252200E28B17 /* 推荐 */ = {
+		BE76E1841F4429B400E28B17 /* 推荐 */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = "推荐";
 			sourceTree = "<group>";
 		};
-		BE76E17D1F44252200E28B17 /* 榜单 */ = {
+		BE76E1851F4429B400E28B17 /* 榜单 */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = "榜单";
 			sourceTree = "<group>";
 		};
-		BE76E17E1F44252200E28B17 /* 歌单 */ = {
+		BE76E1861F4429B400E28B17 /* 歌单 */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = "歌单";
+			sourceTree = "<group>";
+		};
+		BE76E1871F4429DB00E28B17 /* 基础UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "基础UI";
 			sourceTree = "<group>";
 		};
 		BEB37D911EA760C200FE155F = {
@@ -273,13 +291,14 @@
 		BEB37D9C1EA760C200FE155F /* MyProject */ = {
 			isa = PBXGroup;
 			children = (
+				BE76E1871F4429DB00E28B17 /* 基础UI */,
 				BEB37DBC1EA761DD00FE155F /* Define */,
 				BEB37DBB1EA761D400FE155F /* Model */,
 				BEB37DBA1EA761CF00FE155F /* NetManager */,
 				BEB37DB91EA761C600FE155F /* Resource */,
 				BEB37DB81EA761C200FE155F /* Util */,
 				BEB37DB71EA761BD00FE155F /* Vendor */,
-				BEB37DB61EA761B800FE155F /* View */,
+				BE76E17F1F4429A200E28B17 /* View */,
 				BEB37DB51EA761B300FE155F /* ViewController */,
 				BEB37DB41EA761AC00FE155F /* ViewModel */,
 				BEB37DA01EA760C200FE155F /* AppDelegate.h */,
@@ -301,9 +320,6 @@
 		BEB37DB41EA761AC00FE155F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				BE76E1781F44252200E28B17 /* 动态 */,
-				BE76E1791F44252200E28B17 /* 我的 */,
-				BE76E17A1F44252200E28B17 /* 音乐 */,
 				BEB37E631EADF37A00FE155F /* BaseViewModel.h */,
 				BEB37E641EADF37A00FE155F /* BaseViewModel.m */,
 			);
@@ -320,13 +336,6 @@
 				BEB37E4B1EA8A8D000FE155F /* ViewController.m */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		BEB37DB61EA761B800FE155F /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		BEB37DB71EA761BD00FE155F /* Vendor */ = {
@@ -670,7 +679,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/will/Desktop/MyProject/MyProject/Resource/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = MyProject/Resource/PrefixHeader.pch;
 				INFOPLIST_FILE = MyProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.will.MyProject;
@@ -685,7 +694,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/will/Desktop/MyProject/MyProject/Resource/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = MyProject/Resource/PrefixHeader.pch;
 				INFOPLIST_FILE = MyProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.will.MyProject;
