@@ -11,6 +11,10 @@
 		BE0514641EBC30D2005A90B5 /* NSString+PJR.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05145F1EBC30D2005A90B5 /* NSString+PJR.m */; };
 		BE0514651EBC30D2005A90B5 /* NSString+QRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0514611EBC30D2005A90B5 /* NSString+QRCode.m */; };
 		BE05146B1EBC3309005A90B5 /* AppDelegate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05146A1EBC3309005A90B5 /* AppDelegate+Category.m */; };
+		BE76E18A1F442C9F00E28B17 /* MusicMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E1891F442C9F00E28B17 /* MusicMenuViewController.m */; };
+		BE76E19B1F442E6900E28B17 /* TopMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E19A1F442E6900E28B17 /* TopMenuViewController.m */; };
+		BE76E19E1F442E8100E28B17 /* TopNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E19D1F442E8100E28B17 /* TopNavigationController.m */; };
+		BE76E1A11F442E9100E28B17 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E1A01F442E9100E28B17 /* MainViewController.m */; };
 		BEB37D9F1EA760C200FE155F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB37D9E1EA760C200FE155F /* main.m */; };
 		BEB37DA21EA760C200FE155F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB37DA11EA760C200FE155F /* AppDelegate.m */; };
 		BEB37DA81EA760C200FE155F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB37DA61EA760C200FE155F /* Main.storyboard */; };
@@ -36,6 +40,14 @@
 		BE0514611EBC30D2005A90B5 /* NSString+QRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+QRCode.m"; sourceTree = "<group>"; };
 		BE0514691EBC3309005A90B5 /* AppDelegate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Category.h"; sourceTree = "<group>"; };
 		BE05146A1EBC3309005A90B5 /* AppDelegate+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Category.m"; sourceTree = "<group>"; };
+		BE76E1881F442C9F00E28B17 /* MusicMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicMenuViewController.h; sourceTree = "<group>"; };
+		BE76E1891F442C9F00E28B17 /* MusicMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicMenuViewController.m; sourceTree = "<group>"; };
+		BE76E1991F442E6900E28B17 /* TopMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopMenuViewController.h; sourceTree = "<group>"; };
+		BE76E19A1F442E6900E28B17 /* TopMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopMenuViewController.m; sourceTree = "<group>"; };
+		BE76E19C1F442E8100E28B17 /* TopNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopNavigationController.h; sourceTree = "<group>"; };
+		BE76E19D1F442E8100E28B17 /* TopNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopNavigationController.m; sourceTree = "<group>"; };
+		BE76E19F1F442E9100E28B17 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		BE76E1A01F442E9100E28B17 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		BEB37D9A1EA760C200FE155F /* MyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB37D9E1EA760C200FE155F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BEB37DA01EA760C200FE155F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -163,6 +175,8 @@
 		BE76E1731F44251600E28B17 /* 音乐 */ = {
 			isa = PBXGroup;
 			children = (
+				BE76E1881F442C9F00E28B17 /* MusicMenuViewController.h */,
+				BE76E1891F442C9F00E28B17 /* MusicMenuViewController.m */,
 				BE76E1741F44251600E28B17 /* K歌 */,
 				BE76E1751F44251600E28B17 /* 推荐 */,
 				BE76E1761F44251600E28B17 /* 榜单 */,
@@ -263,9 +277,15 @@
 			path = "歌单";
 			sourceTree = "<group>";
 		};
-		BE76E1871F4429DB00E28B17 /* 基础UI */ = {
+		BE76E1981F442E5E00E28B17 /* 基础UI */ = {
 			isa = PBXGroup;
 			children = (
+				BE76E1991F442E6900E28B17 /* TopMenuViewController.h */,
+				BE76E19A1F442E6900E28B17 /* TopMenuViewController.m */,
+				BE76E19C1F442E8100E28B17 /* TopNavigationController.h */,
+				BE76E19D1F442E8100E28B17 /* TopNavigationController.m */,
+				BE76E19F1F442E9100E28B17 /* MainViewController.h */,
+				BE76E1A01F442E9100E28B17 /* MainViewController.m */,
 			);
 			path = "基础UI";
 			sourceTree = "<group>";
@@ -291,7 +311,6 @@
 		BEB37D9C1EA760C200FE155F /* MyProject */ = {
 			isa = PBXGroup;
 			children = (
-				BE76E1871F4429DB00E28B17 /* 基础UI */,
 				BEB37DBC1EA761DD00FE155F /* Define */,
 				BEB37DBB1EA761D400FE155F /* Model */,
 				BEB37DBA1EA761CF00FE155F /* NetManager */,
@@ -329,6 +348,7 @@
 		BEB37DB51EA761B300FE155F /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BE76E1981F442E5E00E28B17 /* 基础UI */,
 				BE76E1711F44251600E28B17 /* 动态 */,
 				BE76E1721F44251600E28B17 /* 我的 */,
 				BE76E1731F44251600E28B17 /* 音乐 */,
@@ -452,6 +472,7 @@
 				TargetAttributes = {
 					BEB37D991EA760C200FE155F = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = RY6LLVSEC8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -541,15 +562,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEB37DC31EA762AC00FE155F /* BaseNetManager.m in Sources */,
+				BE76E18A1F442C9F00E28B17 /* MusicMenuViewController.m in Sources */,
 				BEB37E651EADF37A00FE155F /* BaseViewModel.m in Sources */,
+				BE76E19E1F442E8100E28B17 /* TopNavigationController.m in Sources */,
 				BEB37E4C1EA8A8D000FE155F /* ViewController.m in Sources */,
 				BEB37DA21EA760C200FE155F /* AppDelegate.m in Sources */,
 				BE0514631EBC30D2005A90B5 /* NSObject+Common.m in Sources */,
 				BE0514651EBC30D2005A90B5 /* NSString+QRCode.m in Sources */,
 				BE05146B1EBC3309005A90B5 /* AppDelegate+Category.m in Sources */,
+				BE76E19B1F442E6900E28B17 /* TopMenuViewController.m in Sources */,
 				BEB37DC01EA7627A00FE155F /* BaseModel.m in Sources */,
 				BEB37DC81EA763A900FE155F /* ScrollDisplayViewController.m in Sources */,
 				BEB37D9F1EA760C200FE155F /* main.m in Sources */,
+				BE76E1A11F442E9100E28B17 /* MainViewController.m in Sources */,
 				BE0514641EBC30D2005A90B5 /* NSString+PJR.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -678,6 +703,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = RY6LLVSEC8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MyProject/Resource/PrefixHeader.pch;
 				INFOPLIST_FILE = MyProject/Info.plist;
@@ -693,6 +719,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = RY6LLVSEC8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MyProject/Resource/PrefixHeader.pch;
 				INFOPLIST_FILE = MyProject/Info.plist;
