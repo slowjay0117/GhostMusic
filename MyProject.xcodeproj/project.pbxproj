@@ -11,15 +11,6 @@
 		BE0514641EBC30D2005A90B5 /* NSString+PJR.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05145F1EBC30D2005A90B5 /* NSString+PJR.m */; };
 		BE0514651EBC30D2005A90B5 /* NSString+QRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0514611EBC30D2005A90B5 /* NSString+QRCode.m */; };
 		BE05146B1EBC3309005A90B5 /* AppDelegate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05146A1EBC3309005A90B5 /* AppDelegate+Category.m */; };
-		BE76E1531F44221700E28B17 /* 动态 in Resources */ = {isa = PBXBuildFile; fileRef = BE76E1501F44221700E28B17 /* 动态 */; };
-		BE76E1541F44221700E28B17 /* 我的 in Resources */ = {isa = PBXBuildFile; fileRef = BE76E1511F44221700E28B17 /* 我的 */; };
-		BE76E1551F44221700E28B17 /* 音乐 in Resources */ = {isa = PBXBuildFile; fileRef = BE76E1521F44221700E28B17 /* 音乐 */; };
-		BE76E1591F44222700E28B17 /* 动态 in Resources */ = {isa = PBXBuildFile; fileRef = BE76E1561F44222700E28B17 /* 动态 */; };
-		BE76E15A1F44222700E28B17 /* 我的 in Resources */ = {isa = PBXBuildFile; fileRef = BE76E1571F44222700E28B17 /* 我的 */; };
-		BE76E15B1F44222700E28B17 /* 音乐 in Resources */ = {isa = PBXBuildFile; fileRef = BE76E1581F44222700E28B17 /* 音乐 */; };
-		BE76E15F1F44223D00E28B17 /* 动态 in Resources */ = {isa = PBXBuildFile; fileRef = BE76E15C1F44223D00E28B17 /* 动态 */; };
-		BE76E1601F44223D00E28B17 /* 我的 in Resources */ = {isa = PBXBuildFile; fileRef = BE76E15D1F44223D00E28B17 /* 我的 */; };
-		BE76E1611F44223D00E28B17 /* 音乐 in Resources */ = {isa = PBXBuildFile; fileRef = BE76E15E1F44223D00E28B17 /* 音乐 */; };
 		BEB37D9F1EA760C200FE155F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB37D9E1EA760C200FE155F /* main.m */; };
 		BEB37DA21EA760C200FE155F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB37DA11EA760C200FE155F /* AppDelegate.m */; };
 		BEB37DA81EA760C200FE155F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB37DA61EA760C200FE155F /* Main.storyboard */; };
@@ -45,15 +36,6 @@
 		BE0514611EBC30D2005A90B5 /* NSString+QRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+QRCode.m"; sourceTree = "<group>"; };
 		BE0514691EBC3309005A90B5 /* AppDelegate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Category.h"; sourceTree = "<group>"; };
 		BE05146A1EBC3309005A90B5 /* AppDelegate+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Category.m"; sourceTree = "<group>"; };
-		BE76E1501F44221700E28B17 /* 动态 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "动态"; sourceTree = "<group>"; };
-		BE76E1511F44221700E28B17 /* 我的 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "我的"; sourceTree = "<group>"; };
-		BE76E1521F44221700E28B17 /* 音乐 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "音乐"; sourceTree = "<group>"; };
-		BE76E1561F44222700E28B17 /* 动态 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "动态"; sourceTree = "<group>"; };
-		BE76E1571F44222700E28B17 /* 我的 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "我的"; sourceTree = "<group>"; };
-		BE76E1581F44222700E28B17 /* 音乐 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "音乐"; sourceTree = "<group>"; };
-		BE76E15C1F44223D00E28B17 /* 动态 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "动态"; sourceTree = "<group>"; };
-		BE76E15D1F44223D00E28B17 /* 我的 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "我的"; sourceTree = "<group>"; };
-		BE76E15E1F44223D00E28B17 /* 音乐 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "音乐"; sourceTree = "<group>"; };
 		BEB37D9A1EA760C200FE155F /* MyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB37D9E1EA760C200FE155F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BEB37DA01EA760C200FE155F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -111,6 +93,165 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BE76E16A1F44250200E28B17 /* 动态 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "动态";
+			sourceTree = "<group>";
+		};
+		BE76E16B1F44250200E28B17 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		BE76E16C1F44250200E28B17 /* 音乐 */ = {
+			isa = PBXGroup;
+			children = (
+				BE76E16D1F44250200E28B17 /* K歌 */,
+				BE76E16E1F44250200E28B17 /* 推荐 */,
+				BE76E16F1F44250200E28B17 /* 榜单 */,
+				BE76E1701F44250200E28B17 /* 歌单 */,
+			);
+			path = "音乐";
+			sourceTree = "<group>";
+		};
+		BE76E16D1F44250200E28B17 /* K歌 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "K歌";
+			sourceTree = "<group>";
+		};
+		BE76E16E1F44250200E28B17 /* 推荐 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "推荐";
+			sourceTree = "<group>";
+		};
+		BE76E16F1F44250200E28B17 /* 榜单 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "榜单";
+			sourceTree = "<group>";
+		};
+		BE76E1701F44250200E28B17 /* 歌单 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "歌单";
+			sourceTree = "<group>";
+		};
+		BE76E1711F44251600E28B17 /* 动态 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "动态";
+			sourceTree = "<group>";
+		};
+		BE76E1721F44251600E28B17 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		BE76E1731F44251600E28B17 /* 音乐 */ = {
+			isa = PBXGroup;
+			children = (
+				BE76E1741F44251600E28B17 /* K歌 */,
+				BE76E1751F44251600E28B17 /* 推荐 */,
+				BE76E1761F44251600E28B17 /* 榜单 */,
+				BE76E1771F44251600E28B17 /* 歌单 */,
+			);
+			path = "音乐";
+			sourceTree = "<group>";
+		};
+		BE76E1741F44251600E28B17 /* K歌 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "K歌";
+			sourceTree = "<group>";
+		};
+		BE76E1751F44251600E28B17 /* 推荐 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "推荐";
+			sourceTree = "<group>";
+		};
+		BE76E1761F44251600E28B17 /* 榜单 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "榜单";
+			sourceTree = "<group>";
+		};
+		BE76E1771F44251600E28B17 /* 歌单 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "歌单";
+			sourceTree = "<group>";
+		};
+		BE76E1781F44252200E28B17 /* 动态 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "动态";
+			sourceTree = "<group>";
+		};
+		BE76E1791F44252200E28B17 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		BE76E17A1F44252200E28B17 /* 音乐 */ = {
+			isa = PBXGroup;
+			children = (
+				BE76E17B1F44252200E28B17 /* K歌 */,
+				BE76E17C1F44252200E28B17 /* 推荐 */,
+				BE76E17D1F44252200E28B17 /* 榜单 */,
+				BE76E17E1F44252200E28B17 /* 歌单 */,
+			);
+			path = "音乐";
+			sourceTree = "<group>";
+		};
+		BE76E17B1F44252200E28B17 /* K歌 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "K歌";
+			sourceTree = "<group>";
+		};
+		BE76E17C1F44252200E28B17 /* 推荐 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "推荐";
+			sourceTree = "<group>";
+		};
+		BE76E17D1F44252200E28B17 /* 榜单 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "榜单";
+			sourceTree = "<group>";
+		};
+		BE76E17E1F44252200E28B17 /* 歌单 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "歌单";
+			sourceTree = "<group>";
+		};
 		BEB37D911EA760C200FE155F = {
 			isa = PBXGroup;
 			children = (
@@ -160,9 +301,9 @@
 		BEB37DB41EA761AC00FE155F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				BE76E1561F44222700E28B17 /* 动态 */,
-				BE76E1571F44222700E28B17 /* 我的 */,
-				BE76E1581F44222700E28B17 /* 音乐 */,
+				BE76E1781F44252200E28B17 /* 动态 */,
+				BE76E1791F44252200E28B17 /* 我的 */,
+				BE76E17A1F44252200E28B17 /* 音乐 */,
 				BEB37E631EADF37A00FE155F /* BaseViewModel.h */,
 				BEB37E641EADF37A00FE155F /* BaseViewModel.m */,
 			);
@@ -172,9 +313,9 @@
 		BEB37DB51EA761B300FE155F /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				BE76E1501F44221700E28B17 /* 动态 */,
-				BE76E1511F44221700E28B17 /* 我的 */,
-				BE76E1521F44221700E28B17 /* 音乐 */,
+				BE76E1711F44251600E28B17 /* 动态 */,
+				BE76E1721F44251600E28B17 /* 我的 */,
+				BE76E1731F44251600E28B17 /* 音乐 */,
 				BEB37E4A1EA8A8D000FE155F /* ViewController.h */,
 				BEB37E4B1EA8A8D000FE155F /* ViewController.m */,
 			);
@@ -227,9 +368,9 @@
 		BEB37DBB1EA761D400FE155F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BE76E15C1F44223D00E28B17 /* 动态 */,
-				BE76E15D1F44223D00E28B17 /* 我的 */,
-				BE76E15E1F44223D00E28B17 /* 音乐 */,
+				BE76E16A1F44250200E28B17 /* 动态 */,
+				BE76E16B1F44250200E28B17 /* 我的 */,
+				BE76E16C1F44250200E28B17 /* 音乐 */,
 				BEB37DBE1EA7627A00FE155F /* BaseModel.h */,
 				BEB37DBF1EA7627A00FE155F /* BaseModel.m */,
 			);
@@ -329,18 +470,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE76E1541F44221700E28B17 /* 我的 in Resources */,
-				BE76E1591F44222700E28B17 /* 动态 in Resources */,
 				BEB37DAD1EA760C200FE155F /* LaunchScreen.storyboard in Resources */,
-				BE76E15B1F44222700E28B17 /* 音乐 in Resources */,
-				BE76E15A1F44222700E28B17 /* 我的 in Resources */,
-				BE76E15F1F44223D00E28B17 /* 动态 in Resources */,
 				BEB37DAA1EA760C200FE155F /* Assets.xcassets in Resources */,
-				BE76E1551F44221700E28B17 /* 音乐 in Resources */,
 				BEB37DA81EA760C200FE155F /* Main.storyboard in Resources */,
-				BE76E1611F44223D00E28B17 /* 音乐 in Resources */,
-				BE76E1531F44221700E28B17 /* 动态 in Resources */,
-				BE76E1601F44223D00E28B17 /* 我的 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
