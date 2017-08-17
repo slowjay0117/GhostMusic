@@ -7,6 +7,7 @@
 //
 
 #import "MusicMenuViewController.h"
+#import "ChartsViewController.h"
 
 @interface MusicMenuViewController ()
 
@@ -57,8 +58,7 @@
             break;
         case 2:
         {
-            UIViewController *vc = [UIViewController new];
-            vc.view.backgroundColor = [UIColor greenColor];
+            ChartsViewController *vc = [ChartsViewController new];
             return vc;
         }
             break;

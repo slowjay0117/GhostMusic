@@ -15,6 +15,8 @@
 		BE76E19B1F442E6900E28B17 /* TopMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E19A1F442E6900E28B17 /* TopMenuViewController.m */; };
 		BE76E19E1F442E8100E28B17 /* TopNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E19D1F442E8100E28B17 /* TopNavigationController.m */; };
 		BE76E1A11F442E9100E28B17 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E1A01F442E9100E28B17 /* MainViewController.m */; };
+		BE76E1AB1F4442F100E28B17 /* ChartsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E1AA1F4442F100E28B17 /* ChartsCell.m */; };
+		BE76E1AE1F444C7F00E28B17 /* ChartsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E1AD1F444C7F00E28B17 /* ChartsViewController.m */; };
 		BEB37D9F1EA760C200FE155F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB37D9E1EA760C200FE155F /* main.m */; };
 		BEB37DA21EA760C200FE155F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB37DA11EA760C200FE155F /* AppDelegate.m */; };
 		BEB37DA81EA760C200FE155F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB37DA61EA760C200FE155F /* Main.storyboard */; };
@@ -48,6 +50,10 @@
 		BE76E19D1F442E8100E28B17 /* TopNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopNavigationController.m; sourceTree = "<group>"; };
 		BE76E19F1F442E9100E28B17 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		BE76E1A01F442E9100E28B17 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		BE76E1A91F4442F100E28B17 /* ChartsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsCell.h; sourceTree = "<group>"; };
+		BE76E1AA1F4442F100E28B17 /* ChartsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsCell.m; sourceTree = "<group>"; };
+		BE76E1AC1F444C7F00E28B17 /* ChartsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsViewController.h; sourceTree = "<group>"; };
+		BE76E1AD1F444C7F00E28B17 /* ChartsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsViewController.m; sourceTree = "<group>"; };
 		BEB37D9A1EA760C200FE155F /* MyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB37D9E1EA760C200FE155F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BEB37DA01EA760C200FE155F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -202,6 +208,8 @@
 		BE76E1761F44251600E28B17 /* 榜单 */ = {
 			isa = PBXGroup;
 			children = (
+				BE76E1AC1F444C7F00E28B17 /* ChartsViewController.h */,
+				BE76E1AD1F444C7F00E28B17 /* ChartsViewController.m */,
 			);
 			path = "榜单";
 			sourceTree = "<group>";
@@ -216,66 +224,10 @@
 		BE76E17F1F4429A200E28B17 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BE76E1801F4429B400E28B17 /* 动态 */,
-				BE76E1811F4429B400E28B17 /* 我的 */,
-				BE76E1821F4429B400E28B17 /* 音乐 */,
 			);
 			name = View;
 			path = MyProject/View;
 			sourceTree = SOURCE_ROOT;
-		};
-		BE76E1801F4429B400E28B17 /* 动态 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "动态";
-			sourceTree = "<group>";
-		};
-		BE76E1811F4429B400E28B17 /* 我的 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "我的";
-			sourceTree = "<group>";
-		};
-		BE76E1821F4429B400E28B17 /* 音乐 */ = {
-			isa = PBXGroup;
-			children = (
-				BE76E1831F4429B400E28B17 /* K歌 */,
-				BE76E1841F4429B400E28B17 /* 推荐 */,
-				BE76E1851F4429B400E28B17 /* 榜单 */,
-				BE76E1861F4429B400E28B17 /* 歌单 */,
-			);
-			path = "音乐";
-			sourceTree = "<group>";
-		};
-		BE76E1831F4429B400E28B17 /* K歌 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "K歌";
-			sourceTree = "<group>";
-		};
-		BE76E1841F4429B400E28B17 /* 推荐 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "推荐";
-			sourceTree = "<group>";
-		};
-		BE76E1851F4429B400E28B17 /* 榜单 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "榜单";
-			sourceTree = "<group>";
-		};
-		BE76E1861F4429B400E28B17 /* 歌单 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "歌单";
-			sourceTree = "<group>";
 		};
 		BE76E1981F442E5E00E28B17 /* 基础UI */ = {
 			isa = PBXGroup;
@@ -288,6 +240,61 @@
 				BE76E1A01F442E9100E28B17 /* MainViewController.m */,
 			);
 			path = "基础UI";
+			sourceTree = "<group>";
+		};
+		BE76E1A21F443EE900E28B17 /* 动态 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "动态";
+			sourceTree = "<group>";
+		};
+		BE76E1A31F443EE900E28B17 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		BE76E1A41F443EE900E28B17 /* 音乐 */ = {
+			isa = PBXGroup;
+			children = (
+				BE76E1A51F443EE900E28B17 /* K歌 */,
+				BE76E1A61F443EE900E28B17 /* 推荐 */,
+				BE76E1A71F443EE900E28B17 /* 榜单 */,
+				BE76E1A81F443EE900E28B17 /* 歌单 */,
+			);
+			path = "音乐";
+			sourceTree = "<group>";
+		};
+		BE76E1A51F443EE900E28B17 /* K歌 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "K歌";
+			sourceTree = "<group>";
+		};
+		BE76E1A61F443EE900E28B17 /* 推荐 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "推荐";
+			sourceTree = "<group>";
+		};
+		BE76E1A71F443EE900E28B17 /* 榜单 */ = {
+			isa = PBXGroup;
+			children = (
+				BE76E1A91F4442F100E28B17 /* ChartsCell.h */,
+				BE76E1AA1F4442F100E28B17 /* ChartsCell.m */,
+			);
+			path = "榜单";
+			sourceTree = "<group>";
+		};
+		BE76E1A81F443EE900E28B17 /* 歌单 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "歌单";
 			sourceTree = "<group>";
 		};
 		BEB37D911EA760C200FE155F = {
@@ -339,6 +346,9 @@
 		BEB37DB41EA761AC00FE155F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				BE76E1A21F443EE900E28B17 /* 动态 */,
+				BE76E1A31F443EE900E28B17 /* 我的 */,
+				BE76E1A41F443EE900E28B17 /* 音乐 */,
 				BEB37E631EADF37A00FE155F /* BaseViewModel.h */,
 				BEB37E641EADF37A00FE155F /* BaseViewModel.m */,
 			);
@@ -572,7 +582,9 @@
 				BE05146B1EBC3309005A90B5 /* AppDelegate+Category.m in Sources */,
 				BE76E19B1F442E6900E28B17 /* TopMenuViewController.m in Sources */,
 				BEB37DC01EA7627A00FE155F /* BaseModel.m in Sources */,
+				BE76E1AE1F444C7F00E28B17 /* ChartsViewController.m in Sources */,
 				BEB37DC81EA763A900FE155F /* ScrollDisplayViewController.m in Sources */,
+				BE76E1AB1F4442F100E28B17 /* ChartsCell.m in Sources */,
 				BEB37D9F1EA760C200FE155F /* main.m in Sources */,
 				BE76E1A11F442E9100E28B17 /* MainViewController.m in Sources */,
 				BE0514641EBC30D2005A90B5 /* NSString+PJR.m in Sources */,
