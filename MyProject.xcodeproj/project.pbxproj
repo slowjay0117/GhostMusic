@@ -19,6 +19,8 @@
 		BE76E1AE1F444C7F00E28B17 /* ChartsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E1AD1F444C7F00E28B17 /* ChartsViewController.m */; };
 		BE76E1B11F453A3200E28B17 /* ChartsDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E1B01F453A3200E28B17 /* ChartsDetailCell.m */; };
 		BE76E1B41F45462900E28B17 /* ChartsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E1B31F45462900E28B17 /* ChartsDetailViewController.m */; };
+		BE76E1B71F4593E000E28B17 /* NormalSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E1B61F4593E000E28B17 /* NormalSectionHeaderView.m */; };
+		BE76E1BA1F4593F600E28B17 /* KingSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E1B91F4593F600E28B17 /* KingSectionHeaderView.m */; };
 		BEB37D9F1EA760C200FE155F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB37D9E1EA760C200FE155F /* main.m */; };
 		BEB37DA21EA760C200FE155F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB37DA11EA760C200FE155F /* AppDelegate.m */; };
 		BEB37DA81EA760C200FE155F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB37DA61EA760C200FE155F /* Main.storyboard */; };
@@ -60,6 +62,10 @@
 		BE76E1B01F453A3200E28B17 /* ChartsDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsDetailCell.m; sourceTree = "<group>"; };
 		BE76E1B21F45462900E28B17 /* ChartsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsDetailViewController.h; sourceTree = "<group>"; };
 		BE76E1B31F45462900E28B17 /* ChartsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsDetailViewController.m; sourceTree = "<group>"; };
+		BE76E1B51F4593E000E28B17 /* NormalSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalSectionHeaderView.h; sourceTree = "<group>"; };
+		BE76E1B61F4593E000E28B17 /* NormalSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalSectionHeaderView.m; sourceTree = "<group>"; };
+		BE76E1B81F4593F600E28B17 /* KingSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KingSectionHeaderView.h; sourceTree = "<group>"; };
+		BE76E1B91F4593F600E28B17 /* KingSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KingSectionHeaderView.m; sourceTree = "<group>"; };
 		BEB37D9A1EA760C200FE155F /* MyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB37D9E1EA760C200FE155F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BEB37DA01EA760C200FE155F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -296,6 +302,10 @@
 				BE76E1AA1F4442F100E28B17 /* ChartsCell.m */,
 				BE76E1AF1F453A3200E28B17 /* ChartsDetailCell.h */,
 				BE76E1B01F453A3200E28B17 /* ChartsDetailCell.m */,
+				BE76E1B51F4593E000E28B17 /* NormalSectionHeaderView.h */,
+				BE76E1B61F4593E000E28B17 /* NormalSectionHeaderView.m */,
+				BE76E1B81F4593F600E28B17 /* KingSectionHeaderView.h */,
+				BE76E1B91F4593F600E28B17 /* KingSectionHeaderView.m */,
 			);
 			path = "榜单";
 			sourceTree = "<group>";
@@ -583,6 +593,7 @@
 			files = (
 				BEB37DC31EA762AC00FE155F /* BaseNetManager.m in Sources */,
 				BE76E18A1F442C9F00E28B17 /* MusicMenuViewController.m in Sources */,
+				BE76E1BA1F4593F600E28B17 /* KingSectionHeaderView.m in Sources */,
 				BEB37E651EADF37A00FE155F /* BaseViewModel.m in Sources */,
 				BE76E19E1F442E8100E28B17 /* TopNavigationController.m in Sources */,
 				BEB37E4C1EA8A8D000FE155F /* ViewController.m in Sources */,
@@ -599,6 +610,7 @@
 				BE76E1AB1F4442F100E28B17 /* ChartsCell.m in Sources */,
 				BEB37D9F1EA760C200FE155F /* main.m in Sources */,
 				BE76E1A11F442E9100E28B17 /* MainViewController.m in Sources */,
+				BE76E1B71F4593E000E28B17 /* NormalSectionHeaderView.m in Sources */,
 				BE0514641EBC30D2005A90B5 /* NSString+PJR.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

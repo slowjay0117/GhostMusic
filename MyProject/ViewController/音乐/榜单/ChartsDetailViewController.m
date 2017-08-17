@@ -10,23 +10,57 @@
 #import "ChartsDetailCell.h"
 
 @interface ChartsDetailViewController ()<UITableViewDelegate,UITableViewDataSource>
-
 /** 背景图 */
 @property (nonatomic, strong) UIImageView *backgroundView;
 /** 表格视图 */
 @property (nonatomic, strong) UITableView *tableView;
+/** 表头视图 */
+@property (nonatomic, strong) UIView *headerView;
+/** 返回按钮 */
+@property (nonatomic, strong) UIButton *backButton;
+/** 顶部的渐变蓝色视图 */
+@property (nonatomic, strong) UIView *topBlueView;
+/** 顶部蓝色视图中的标签 */
+@property (nonatomic, strong) UILabel *topBlueLabel;
 @end
 
 @implementation ChartsDetailViewController
 
+#pragma mark - view的生命周期
 - (void)viewDidLoad {
     [super viewDidLoad];
     //先调用背景图的懒加载，保证在表格的下面
     [self backgroundView];
     [self tableView];
+    [self topBlueView];
+    [self backButton];
     
     self.view.backgroundColor = [UIColor whiteColor];
+    /** 关闭系统自动移动滚动视图内容的这个功能 */
+    /**
+     *  @author will, 17-08-17 15:08:35
+     *
+     *  为什么系统有自动移动滚动视图的内容呢？
+     *  一旦有导航栏时，为了防止滚动视图的内容被导航栏盖住
+     *  系统会自动将滚动视图的内容向下移动64个点，错开导航栏
+     *  解决此问题的方案有两种，一是手动修改滚动视图的
+     *  contentInse，向上移动64个点
+     *  一种是关闭系统的这个功能
+     */
+    self.automaticallyAdjustsScrollViewInsets = NO;
     self.backgroundView.image = [UIImage imageNamed:@"xingebang640.jpg"];
+    self.tableView.tableHeaderView = self.headerView;
+    self.topBlueLabel.text = @"新歌榜";
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    //隐藏导航栏
+    self.navigationController.navigationBarHidden = YES;
+}
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    self.navigationController.navigationBarHidden = NO;
 }
 
 #pragma mark - lazy loading
@@ -54,6 +88,51 @@
         [_tableView registerClass:[ChartsDetailCell class] forCellReuseIdentifier:@"ChartsDetailCell"];
     }
     return _tableView;
+}
+- (UIView *)headerView{
+    if (!_headerView) {
+        _headerView = [UIView new];
+        _headerView.frame = CGRectMake(0, 0, 0, 250);
+    }
+    return _headerView;
+}
+- (UIButton *)backButton{
+    if (!_backButton) {
+        _backButton = [UIButton new];
+        [self.view addSubview:_backButton];
+        [_backButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(28);
+            make.left.mas_equalTo(15);
+        }];
+        [_backButton setBackgroundImage:[UIImage imageNamed:@"ic_recommend_back_normal"] forState:UIControlStateNormal];
+        [_backButton setBackgroundImage:[UIImage imageNamed:@"ic_recommend_back_press"] forState:UIControlStateHighlighted];
+        [_backButton bk_addEventHandler:^(id sender) {
+            [self.navigationController popViewControllerAnimated:YES];
+        } forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _backButton;
+}
+- (UIView *)topBlueView{
+    if (!_topBlueView) {
+        _topBlueView = [UIView new];
+        [self.view addSubview:_topBlueView];
+        _topBlueView.backgroundColor = kRGBColor(88, 179, 252, 1.0);
+        _topBlueView.alpha = 0;
+        [_topBlueView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.top.right.mas_equalTo(0);
+            make.height.mas_equalTo(64);
+        }];
+        /** 创建蓝色视图内部的标签 */
+        _topBlueLabel = [UILabel new];
+        _topBlueLabel.font = [UIFont systemFontOfSize:18];
+        _topBlueLabel.textColor = [UIColor whiteColor];
+        [_topBlueView addSubview:_topBlueLabel];
+        [_topBlueLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.mas_equalTo(0);
+            make.top.mas_equalTo(30);
+        }];
+    }
+    return _topBlueView;
 }
 
 #pragma mark - 表视图代理的方法
@@ -117,6 +196,40 @@
 /** 让单元格根据添加的内容约束，自动计算合适的高度，此方法，用于内容高度不定的情况 */
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return UITableViewAutomaticDimension;
+}
+/** 监视tableView */
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    //DDLogVerbose(@"%f",scrollView.contentOffset.y);
+    //0.不管拉没拉动表视图，只要表的偏移量时负值，保持背景图的顶部距离为0
+    if (scrollView.contentOffset.y < 0) {
+        [_backgroundView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(0);
+        }];
+    }
+    //1.如果向下拉动，偏移量y为负值到-110时，开始修改背景图的顶部约束，而且要保证表格的偏移量和背景图的移动距离相同，才能有同时移动，绑在一起的感觉
+    if (scrollView.contentOffset.y < -110) {
+        [_backgroundView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(-scrollView.contentOffset.y-110);
+        }];
+    }
+    //2.只要表格向上移动，则背景图立即保持与表格的移动偏移量一致
+    if (scrollView.contentOffset.y > 0) {
+        [_backgroundView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(-scrollView.contentOffset.y);
+        }];
+    }
+    //3.当表格向上滚动到某个距离时，让顶部的蓝色视图，从透明变成不透明
+    //表头高250，滚动到距离view64的位置
+    if (scrollView.contentOffset.y > 186) {
+        //只要将要改变的数据的目标值放在这个方法内，则系统就会自动为这个变化过程添加动画效果
+        [UIView animateWithDuration:0.5 animations:^{
+            self.topBlueView.alpha = 1;
+        }];
+    }else{
+        [UIView animateWithDuration:0.5 animations:^{
+            self.topBlueView.alpha = 0;
+        }];
+    }
 }
 
 #pragma mark - 单独定义的方法
