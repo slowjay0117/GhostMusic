@@ -16,6 +16,8 @@
 -(UIImageView *)leftImageView{
     if(!_leftImageView){
         _leftImageView = [UIImageView new];
+        //开启图片的用户交互功能，这样它内部的按钮才能响应用户的点击动作
+        _leftImageView.userInteractionEnabled = YES;
         [self.contentView addSubview:_leftImageView];
         [_leftImageView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.size.mas_offset(100);

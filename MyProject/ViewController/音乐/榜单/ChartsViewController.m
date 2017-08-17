@@ -8,6 +8,7 @@
 
 #import "ChartsViewController.h"
 #import "ChartsCell.h"
+#import "ChartsDetailViewController.h"
 
 @interface ChartsViewController ()
 
@@ -19,8 +20,16 @@
     [super viewDidLoad];
     //注册单元格
     [self.tableView registerClass:[ChartsCell class] forCellReuseIdentifier:@"ChartsCell"];
+    self.tableView.sectionFooterHeight = 4;
+    self.tableView.sectionHeaderHeight = 4;
+    //将tableView中的内容的底部向上移动出menu的高度
+    //向上移动写正直，向下移动写负值
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 44, 0);
+    
+    UIImageView *tableFooter = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"tableView_section_bg"]];
+    tableFooter.frame = CGRectMake(0, 0, 0, 4);
+    self.tableView.tableFooterView = tableFooter;
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -49,6 +58,19 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 140;
+}
+
+/** 设定分区头的图片 */
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    return [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"tableView_section_bg"]];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    //去掉选中的效果
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    //创建详情vc，并由导航推出
+    ChartsDetailViewController *detailVC = [ChartsDetailViewController new];
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 
