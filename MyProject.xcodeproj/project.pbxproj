@@ -23,6 +23,7 @@
 		BE76E1BA1F4593F600E28B17 /* KingSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E1B91F4593F600E28B17 /* KingSectionHeaderView.m */; };
 		BE76E1BD1F46C20400E28B17 /* SongListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E1BC1F46C20400E28B17 /* SongListCell.m */; };
 		BE76E1C01F46C8D200E28B17 /* SongListLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E1BF1F46C8D200E28B17 /* SongListLayout.m */; };
+		BE76E1C31F46CE1700E28B17 /* SongListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E1C21F46CE1700E28B17 /* SongListViewController.m */; };
 		BEB37D9F1EA760C200FE155F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB37D9E1EA760C200FE155F /* main.m */; };
 		BEB37DA21EA760C200FE155F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB37DA11EA760C200FE155F /* AppDelegate.m */; };
 		BEB37DA81EA760C200FE155F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB37DA61EA760C200FE155F /* Main.storyboard */; };
@@ -72,6 +73,8 @@
 		BE76E1BC1F46C20400E28B17 /* SongListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongListCell.m; sourceTree = "<group>"; };
 		BE76E1BE1F46C8D200E28B17 /* SongListLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongListLayout.h; sourceTree = "<group>"; };
 		BE76E1BF1F46C8D200E28B17 /* SongListLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongListLayout.m; sourceTree = "<group>"; };
+		BE76E1C11F46CE1700E28B17 /* SongListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongListViewController.h; sourceTree = "<group>"; };
+		BE76E1C21F46CE1700E28B17 /* SongListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongListViewController.m; sourceTree = "<group>"; };
 		BEB37D9A1EA760C200FE155F /* MyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB37D9E1EA760C200FE155F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BEB37DA01EA760C200FE155F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -237,6 +240,8 @@
 		BE76E1771F44251600E28B17 /* 歌单 */ = {
 			isa = PBXGroup;
 			children = (
+				BE76E1C11F46CE1700E28B17 /* SongListViewController.h */,
+				BE76E1C21F46CE1700E28B17 /* SongListViewController.m */,
 			);
 			path = "歌单";
 			sourceTree = "<group>";
@@ -606,6 +611,7 @@
 				BE76E1BA1F4593F600E28B17 /* KingSectionHeaderView.m in Sources */,
 				BEB37E651EADF37A00FE155F /* BaseViewModel.m in Sources */,
 				BE76E19E1F442E8100E28B17 /* TopNavigationController.m in Sources */,
+				BE76E1C31F46CE1700E28B17 /* SongListViewController.m in Sources */,
 				BEB37E4C1EA8A8D000FE155F /* ViewController.m in Sources */,
 				BEB37DA21EA760C200FE155F /* AppDelegate.m in Sources */,
 				BE0514631EBC30D2005A90B5 /* NSObject+Common.m in Sources */,
