@@ -21,6 +21,8 @@
 		BE76E1B41F45462900E28B17 /* ChartsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E1B31F45462900E28B17 /* ChartsDetailViewController.m */; };
 		BE76E1B71F4593E000E28B17 /* NormalSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E1B61F4593E000E28B17 /* NormalSectionHeaderView.m */; };
 		BE76E1BA1F4593F600E28B17 /* KingSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E1B91F4593F600E28B17 /* KingSectionHeaderView.m */; };
+		BE76E1BD1F46C20400E28B17 /* SongListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E1BC1F46C20400E28B17 /* SongListCell.m */; };
+		BE76E1C01F46C8D200E28B17 /* SongListLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E1BF1F46C8D200E28B17 /* SongListLayout.m */; };
 		BEB37D9F1EA760C200FE155F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB37D9E1EA760C200FE155F /* main.m */; };
 		BEB37DA21EA760C200FE155F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB37DA11EA760C200FE155F /* AppDelegate.m */; };
 		BEB37DA81EA760C200FE155F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB37DA61EA760C200FE155F /* Main.storyboard */; };
@@ -66,6 +68,10 @@
 		BE76E1B61F4593E000E28B17 /* NormalSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalSectionHeaderView.m; sourceTree = "<group>"; };
 		BE76E1B81F4593F600E28B17 /* KingSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KingSectionHeaderView.h; sourceTree = "<group>"; };
 		BE76E1B91F4593F600E28B17 /* KingSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KingSectionHeaderView.m; sourceTree = "<group>"; };
+		BE76E1BB1F46C20400E28B17 /* SongListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongListCell.h; sourceTree = "<group>"; };
+		BE76E1BC1F46C20400E28B17 /* SongListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongListCell.m; sourceTree = "<group>"; };
+		BE76E1BE1F46C8D200E28B17 /* SongListLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongListLayout.h; sourceTree = "<group>"; };
+		BE76E1BF1F46C8D200E28B17 /* SongListLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongListLayout.m; sourceTree = "<group>"; };
 		BEB37D9A1EA760C200FE155F /* MyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB37D9E1EA760C200FE155F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BEB37DA01EA760C200FE155F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -313,6 +319,10 @@
 		BE76E1A81F443EE900E28B17 /* 歌单 */ = {
 			isa = PBXGroup;
 			children = (
+				BE76E1BB1F46C20400E28B17 /* SongListCell.h */,
+				BE76E1BC1F46C20400E28B17 /* SongListCell.m */,
+				BE76E1BE1F46C8D200E28B17 /* SongListLayout.h */,
+				BE76E1BF1F46C8D200E28B17 /* SongListLayout.m */,
 			);
 			path = "歌单";
 			sourceTree = "<group>";
@@ -604,7 +614,9 @@
 				BE0514651EBC30D2005A90B5 /* NSString+QRCode.m in Sources */,
 				BE05146B1EBC3309005A90B5 /* AppDelegate+Category.m in Sources */,
 				BE76E19B1F442E6900E28B17 /* TopMenuViewController.m in Sources */,
+				BE76E1C01F46C8D200E28B17 /* SongListLayout.m in Sources */,
 				BEB37DC01EA7627A00FE155F /* BaseModel.m in Sources */,
+				BE76E1BD1F46C20400E28B17 /* SongListCell.m in Sources */,
 				BE76E1AE1F444C7F00E28B17 /* ChartsViewController.m in Sources */,
 				BEB37DC81EA763A900FE155F /* ScrollDisplayViewController.m in Sources */,
 				BE76E1AB1F4442F100E28B17 /* ChartsCell.m in Sources */,
