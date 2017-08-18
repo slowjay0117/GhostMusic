@@ -8,6 +8,7 @@
 
 #import "ChartsDetailViewController.h"
 #import "ChartsDetailCell.h"
+#import "NormalSectionHeaderView.h"
 
 @interface ChartsDetailViewController ()<UITableViewDelegate,UITableViewDataSource>
 /** 背景图 */
@@ -22,6 +23,8 @@
 @property (nonatomic, strong) UIView *topBlueView;
 /** 顶部蓝色视图中的标签 */
 @property (nonatomic, strong) UILabel *topBlueLabel;
+
+@property (nonatomic, strong) UILabel *dateLabel;
 @end
 
 @implementation ChartsDetailViewController
@@ -51,6 +54,8 @@
     self.backgroundView.image = [UIImage imageNamed:@"xingebang640.jpg"];
     self.tableView.tableHeaderView = self.headerView;
     self.topBlueLabel.text = @"新歌榜";
+    
+    self.dateLabel.text = @"更新日期2017.8.18";
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -93,6 +98,14 @@
     if (!_headerView) {
         _headerView = [UIView new];
         _headerView.frame = CGRectMake(0, 0, 0, 250);
+        _dateLabel = [UILabel new];
+        [_headerView addSubview:_dateLabel];
+        [_dateLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.mas_equalTo(22);
+            make.bottom.mas_equalTo(-15);
+        }];
+        _dateLabel.textColor = [UIColor whiteColor];
+        _dateLabel.font = [UIFont systemFontOfSize:14];
     }
     return _headerView;
 }
@@ -197,6 +210,15 @@
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return UITableViewAutomaticDimension;
 }
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    return [NormalSectionHeaderView new];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 47;
+}
+
 /** 监视tableView */
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     //DDLogVerbose(@"%f",scrollView.contentOffset.y);
