@@ -21,7 +21,7 @@
         self.itemSize = CGSizeMake(width, height);
         self.scrollDirection = UICollectionViewScrollDirectionVertical;
         //设置分区头大小
-        self.headerReferenceSize = CGSizeMake(0, 45);
+        self.headerReferenceSize = CGSizeMake(0, 40);
     }
     return self;
 }
