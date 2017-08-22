@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SingNumberCell">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="77"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="396" height="77"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a2r-O8-Qzk">
+                        <rect key="frame" x="12" y="16.5" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="7Lo-31-6i7"/>
+                            <constraint firstAttribute="height" constant="44" id="FjQ-oe-1tM"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyT-6k-AAx">
+                        <rect key="frame" x="71" y="22.5" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpE-uw-JL0">
+                        <rect key="frame" x="71" y="43" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QB3-ka-9hX">
+                        <rect key="frame" x="360" y="26" width="24" height="24"/>
+                        <state key="normal" backgroundImage="bt_k_k_normail"/>
+                        <state key="highlighted" backgroundImage="bt_k_k_press"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="CyT-6k-AAx" firstAttribute="top" secondItem="a2r-O8-Qzk" secondAttribute="top" constant="6" id="1ug-gZ-FfH"/>
+                <constraint firstItem="DpE-uw-JL0" firstAttribute="leading" secondItem="CyT-6k-AAx" secondAttribute="leading" id="83n-x3-OHG"/>
+                <constraint firstItem="QB3-ka-9hX" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="9VX-hg-QEL"/>
+                <constraint firstAttribute="trailing" secondItem="QB3-ka-9hX" secondAttribute="trailing" constant="12" id="Npm-Mb-eLM"/>
+                <constraint firstItem="CyT-6k-AAx" firstAttribute="leading" secondItem="a2r-O8-Qzk" secondAttribute="trailing" constant="15" id="Qnt-6B-iPC"/>
+                <constraint firstItem="DpE-uw-JL0" firstAttribute="top" secondItem="CyT-6k-AAx" secondAttribute="bottom" constant="4" id="V0b-pi-QSH"/>
+                <constraint firstItem="a2r-O8-Qzk" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="aVc-zd-yMA"/>
+                <constraint firstItem="a2r-O8-Qzk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="cK6-hQ-XOK"/>
+            </constraints>
+            <size key="customSize" width="396" height="77"/>
+            <connections>
+                <outlet property="numberLabel" destination="DpE-uw-JL0" id="gcg-Uo-zPr"/>
+                <outlet property="singerImageView" destination="a2r-O8-Qzk" id="Du2-33-n6l"/>
+                <outlet property="titleLabel" destination="CyT-6k-AAx" id="whL-Fx-AoH"/>
+            </connections>
+            <point key="canvasLocation" x="21" y="34.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bt_k_k_normail" width="24" height="24"/>
+        <image name="bt_k_k_press" width="24" height="24"/>
+    </resources>
+</document>

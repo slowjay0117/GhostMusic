@@ -93,10 +93,10 @@
             make.right.mas_equalTo(-20);
             make.centerY.mas_equalTo(0);
         }];
-        [_latestButton bk_addEventHandler:^(id sender) {
-            _latestButton.selected = YES;
-            _hotestButton.selected = NO;
-        } forControlEvents:UIControlEventTouchUpInside];
+//        [_latestButton bk_addEventHandler:^(id sender) {
+//            _latestButton.selected = YES;
+//            _hotestButton.selected = NO;
+//        } forControlEvents:UIControlEventTouchUpInside];
         //中间的灰色短竖线
         UIView *lineView = [UIView new];
         [_topView addSubview:lineView];
@@ -119,10 +119,10 @@
             make.centerY.mas_equalTo(0);
         }];
         _hotestButton.selected = YES;
-        [_hotestButton bk_addEventHandler:^(id sender) {
-            _hotestButton.selected = YES;
-            _latestButton.selected = NO;
-        } forControlEvents:UIControlEventTouchUpInside];
+//        [_hotestButton bk_addEventHandler:^(id sender) {
+//            _hotestButton.selected = YES;
+//            _latestButton.selected = NO;
+//        } forControlEvents:UIControlEventTouchUpInside];
         //设置topView为隐藏
         _topView.hidden = YES;
     }

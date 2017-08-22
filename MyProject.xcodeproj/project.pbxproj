@@ -11,6 +11,15 @@
 		BE0514641EBC30D2005A90B5 /* NSString+PJR.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05145F1EBC30D2005A90B5 /* NSString+PJR.m */; };
 		BE0514651EBC30D2005A90B5 /* NSString+QRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0514611EBC30D2005A90B5 /* NSString+QRCode.m */; };
 		BE05146B1EBC3309005A90B5 /* AppDelegate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05146A1EBC3309005A90B5 /* AppDelegate+Category.m */; };
+		BE106B7C1F4AC6F800562C69 /* SongListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE106B7B1F4AC6F800562C69 /* SongListViewController.m */; };
+		BE106B7E1F4AC93000562C69 /* MyKSong.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE106B7D1F4AC93000562C69 /* MyKSong.xib */; };
+		BE106B801F4ACD1800562C69 /* KSongCategory.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE106B7F1F4ACD1800562C69 /* KSongCategory.xib */; };
+		BE106B821F4AD0A400562C69 /* KSongSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE106B811F4AD0A400562C69 /* KSongSectionHeader.xib */; };
+		BE106B861F4AD1D600562C69 /* TopAdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE106B841F4AD1D600562C69 /* TopAdCell.m */; };
+		BE106B871F4AD1D600562C69 /* TopAdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE106B851F4AD1D600562C69 /* TopAdCell.xib */; };
+		BE106B8E1F4AD2B900562C69 /* SingNumberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE106B8C1F4AD2B900562C69 /* SingNumberCell.m */; };
+		BE106B8F1F4AD2B900562C69 /* SingNumberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE106B8D1F4AD2B900562C69 /* SingNumberCell.xib */; };
+		BE106B921F4AD63800562C69 /* KSongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE106B911F4AD63800562C69 /* KSongViewController.m */; };
 		BE76E18A1F442C9F00E28B17 /* MusicMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E1891F442C9F00E28B17 /* MusicMenuViewController.m */; };
 		BE76E19B1F442E6900E28B17 /* TopMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E19A1F442E6900E28B17 /* TopMenuViewController.m */; };
 		BE76E19E1F442E8100E28B17 /* TopNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E19D1F442E8100E28B17 /* TopNavigationController.m */; };
@@ -23,7 +32,6 @@
 		BE76E1BA1F4593F600E28B17 /* KingSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E1B91F4593F600E28B17 /* KingSectionHeaderView.m */; };
 		BE76E1BD1F46C20400E28B17 /* SongListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E1BC1F46C20400E28B17 /* SongListCell.m */; };
 		BE76E1C01F46C8D200E28B17 /* SongListLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E1BF1F46C8D200E28B17 /* SongListLayout.m */; };
-		BE76E1C31F46CE1700E28B17 /* SongListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76E1C21F46CE1700E28B17 /* SongListViewController.m */; };
 		BEB37D9F1EA760C200FE155F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB37D9E1EA760C200FE155F /* main.m */; };
 		BEB37DA21EA760C200FE155F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB37DA11EA760C200FE155F /* AppDelegate.m */; };
 		BEB37DA81EA760C200FE155F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEB37DA61EA760C200FE155F /* Main.storyboard */; };
@@ -49,6 +57,19 @@
 		BE0514611EBC30D2005A90B5 /* NSString+QRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+QRCode.m"; sourceTree = "<group>"; };
 		BE0514691EBC3309005A90B5 /* AppDelegate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Category.h"; sourceTree = "<group>"; };
 		BE05146A1EBC3309005A90B5 /* AppDelegate+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Category.m"; sourceTree = "<group>"; };
+		BE106B7A1F4AC6F800562C69 /* SongListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongListViewController.h; sourceTree = "<group>"; };
+		BE106B7B1F4AC6F800562C69 /* SongListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongListViewController.m; sourceTree = "<group>"; };
+		BE106B7D1F4AC93000562C69 /* MyKSong.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyKSong.xib; sourceTree = "<group>"; };
+		BE106B7F1F4ACD1800562C69 /* KSongCategory.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KSongCategory.xib; sourceTree = "<group>"; };
+		BE106B811F4AD0A400562C69 /* KSongSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KSongSectionHeader.xib; sourceTree = "<group>"; };
+		BE106B831F4AD1D600562C69 /* TopAdCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAdCell.h; sourceTree = "<group>"; };
+		BE106B841F4AD1D600562C69 /* TopAdCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopAdCell.m; sourceTree = "<group>"; };
+		BE106B851F4AD1D600562C69 /* TopAdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopAdCell.xib; sourceTree = "<group>"; };
+		BE106B8B1F4AD2B900562C69 /* SingNumberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingNumberCell.h; sourceTree = "<group>"; };
+		BE106B8C1F4AD2B900562C69 /* SingNumberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingNumberCell.m; sourceTree = "<group>"; };
+		BE106B8D1F4AD2B900562C69 /* SingNumberCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingNumberCell.xib; sourceTree = "<group>"; };
+		BE106B901F4AD63800562C69 /* KSongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSongViewController.h; sourceTree = "<group>"; };
+		BE106B911F4AD63800562C69 /* KSongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSongViewController.m; sourceTree = "<group>"; };
 		BE76E1881F442C9F00E28B17 /* MusicMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicMenuViewController.h; sourceTree = "<group>"; };
 		BE76E1891F442C9F00E28B17 /* MusicMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicMenuViewController.m; sourceTree = "<group>"; };
 		BE76E1991F442E6900E28B17 /* TopMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopMenuViewController.h; sourceTree = "<group>"; };
@@ -73,8 +94,6 @@
 		BE76E1BC1F46C20400E28B17 /* SongListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongListCell.m; sourceTree = "<group>"; };
 		BE76E1BE1F46C8D200E28B17 /* SongListLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongListLayout.h; sourceTree = "<group>"; };
 		BE76E1BF1F46C8D200E28B17 /* SongListLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongListLayout.m; sourceTree = "<group>"; };
-		BE76E1C11F46CE1700E28B17 /* SongListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongListViewController.h; sourceTree = "<group>"; };
-		BE76E1C21F46CE1700E28B17 /* SongListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongListViewController.m; sourceTree = "<group>"; };
 		BEB37D9A1EA760C200FE155F /* MyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB37D9E1EA760C200FE155F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BEB37DA01EA760C200FE155F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -215,6 +234,8 @@
 		BE76E1741F44251600E28B17 /* K歌 */ = {
 			isa = PBXGroup;
 			children = (
+				BE106B901F4AD63800562C69 /* KSongViewController.h */,
+				BE106B911F4AD63800562C69 /* KSongViewController.m */,
 			);
 			path = "K歌";
 			sourceTree = "<group>";
@@ -240,8 +261,8 @@
 		BE76E1771F44251600E28B17 /* 歌单 */ = {
 			isa = PBXGroup;
 			children = (
-				BE76E1C11F46CE1700E28B17 /* SongListViewController.h */,
-				BE76E1C21F46CE1700E28B17 /* SongListViewController.m */,
+				BE106B7A1F4AC6F800562C69 /* SongListViewController.h */,
+				BE106B7B1F4AC6F800562C69 /* SongListViewController.m */,
 			);
 			path = "歌单";
 			sourceTree = "<group>";
@@ -295,6 +316,15 @@
 		BE76E1A51F443EE900E28B17 /* K歌 */ = {
 			isa = PBXGroup;
 			children = (
+				BE106B7D1F4AC93000562C69 /* MyKSong.xib */,
+				BE106B7F1F4ACD1800562C69 /* KSongCategory.xib */,
+				BE106B811F4AD0A400562C69 /* KSongSectionHeader.xib */,
+				BE106B831F4AD1D600562C69 /* TopAdCell.h */,
+				BE106B841F4AD1D600562C69 /* TopAdCell.m */,
+				BE106B851F4AD1D600562C69 /* TopAdCell.xib */,
+				BE106B8B1F4AD2B900562C69 /* SingNumberCell.h */,
+				BE106B8C1F4AD2B900562C69 /* SingNumberCell.m */,
+				BE106B8D1F4AD2B900562C69 /* SingNumberCell.xib */,
 			);
 			path = "K歌";
 			sourceTree = "<group>";
@@ -545,9 +575,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE106B7E1F4AC93000562C69 /* MyKSong.xib in Resources */,
 				BEB37DAD1EA760C200FE155F /* LaunchScreen.storyboard in Resources */,
 				BEB37DAA1EA760C200FE155F /* Assets.xcassets in Resources */,
+				BE106B801F4ACD1800562C69 /* KSongCategory.xib in Resources */,
 				BEB37DA81EA760C200FE155F /* Main.storyboard in Resources */,
+				BE106B8F1F4AD2B900562C69 /* SingNumberCell.xib in Resources */,
+				BE106B871F4AD1D600562C69 /* TopAdCell.xib in Resources */,
+				BE106B821F4AD0A400562C69 /* KSongSectionHeader.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,9 +644,12 @@
 				BEB37DC31EA762AC00FE155F /* BaseNetManager.m in Sources */,
 				BE76E18A1F442C9F00E28B17 /* MusicMenuViewController.m in Sources */,
 				BE76E1BA1F4593F600E28B17 /* KingSectionHeaderView.m in Sources */,
+				BE106B8E1F4AD2B900562C69 /* SingNumberCell.m in Sources */,
 				BEB37E651EADF37A00FE155F /* BaseViewModel.m in Sources */,
+				BE106B921F4AD63800562C69 /* KSongViewController.m in Sources */,
+				BE106B861F4AD1D600562C69 /* TopAdCell.m in Sources */,
 				BE76E19E1F442E8100E28B17 /* TopNavigationController.m in Sources */,
-				BE76E1C31F46CE1700E28B17 /* SongListViewController.m in Sources */,
+				BE106B7C1F4AC6F800562C69 /* SongListViewController.m in Sources */,
 				BEB37E4C1EA8A8D000FE155F /* ViewController.m in Sources */,
 				BEB37DA21EA760C200FE155F /* AppDelegate.m in Sources */,
 				BE0514631EBC30D2005A90B5 /* NSObject+Common.m in Sources */,

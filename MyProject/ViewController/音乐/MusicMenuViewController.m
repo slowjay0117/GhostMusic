@@ -9,6 +9,7 @@
 #import "MusicMenuViewController.h"
 #import "ChartsViewController.h"
 #import "SongListViewController.h"
+#import "KSongViewController.h"
 
 @interface MusicMenuViewController ()
 
@@ -30,7 +31,7 @@
         self.titleColorSelected = kRGBColor(24, 190, 254, 1);
         self.progressWidth = 36;
         self.progressHeight = 3;
-        self.selectIndex = 2;
+        self.selectIndex = 3;
     }
     return self;
 }
@@ -64,8 +65,7 @@
             break;
         case 3:
         {
-            UIViewController *vc = [UIViewController new];
-            vc.view.backgroundColor = [UIColor blueColor];
+            KSongViewController *vc = [[KSongViewController alloc]initWithCollectionViewLayout:[UICollectionViewFlowLayout new]];
             return vc;
         }
             break;
