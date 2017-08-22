@@ -42,17 +42,23 @@
                         <state key="normal" backgroundImage="bt_k_k_normail"/>
                         <state key="highlighted" backgroundImage="bt_k_k_press"/>
                     </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_line" translatesAutoresizingMaskIntoConstraints="NO" id="3r3-oQ-HbR">
+                        <rect key="frame" x="0.0" y="76" width="396" height="1"/>
+                    </imageView>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstItem="CyT-6k-AAx" firstAttribute="top" secondItem="a2r-O8-Qzk" secondAttribute="top" constant="6" id="1ug-gZ-FfH"/>
                 <constraint firstItem="DpE-uw-JL0" firstAttribute="leading" secondItem="CyT-6k-AAx" secondAttribute="leading" id="83n-x3-OHG"/>
                 <constraint firstItem="QB3-ka-9hX" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="9VX-hg-QEL"/>
+                <constraint firstItem="3r3-oQ-HbR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="C7x-B7-et8"/>
                 <constraint firstAttribute="trailing" secondItem="QB3-ka-9hX" secondAttribute="trailing" constant="12" id="Npm-Mb-eLM"/>
                 <constraint firstItem="CyT-6k-AAx" firstAttribute="leading" secondItem="a2r-O8-Qzk" secondAttribute="trailing" constant="15" id="Qnt-6B-iPC"/>
                 <constraint firstItem="DpE-uw-JL0" firstAttribute="top" secondItem="CyT-6k-AAx" secondAttribute="bottom" constant="4" id="V0b-pi-QSH"/>
                 <constraint firstItem="a2r-O8-Qzk" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="aVc-zd-yMA"/>
                 <constraint firstItem="a2r-O8-Qzk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="cK6-hQ-XOK"/>
+                <constraint firstAttribute="bottom" secondItem="3r3-oQ-HbR" secondAttribute="bottom" id="dPV-ES-tdU"/>
+                <constraint firstAttribute="trailing" secondItem="3r3-oQ-HbR" secondAttribute="trailing" id="vjc-cL-gzs"/>
             </constraints>
             <size key="customSize" width="396" height="77"/>
             <connections>
@@ -66,5 +72,6 @@
     <resources>
         <image name="bt_k_k_normail" width="24" height="24"/>
         <image name="bt_k_k_press" width="24" height="24"/>
+        <image name="img_line" width="6" height="1"/>
     </resources>
 </document>
