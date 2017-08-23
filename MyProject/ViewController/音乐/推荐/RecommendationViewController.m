@@ -8,6 +8,7 @@
 
 #import "RecommendationViewController.h"
 #import "AdCell.h"
+#import "NormalOptionCell.h"
 
 @interface RecommendationViewController ()<UICollectionViewDelegateFlowLayout,iCarouselDelegate,iCarouselDataSource>
 @property (nonatomic, strong) UIPageControl *pc;
@@ -22,16 +23,21 @@
     self.collectionView.backgroundColor = [UIColor whiteColor];
     //注册每个分区的单元格类型及头、脚视图
     [self.collectionView registerClass:[AdCell class] forCellWithReuseIdentifier:@"AdCell"];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"NormalOptionCell" bundle:nil] forCellWithReuseIdentifier:@"NormalOption"];
+    [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"SectionFooter"];
 
 }
 
 #pragma mark <UICollectionViewDataSource>
 //1
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
+    return 2;
 }
 //2
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    if (section == 1) {
+        return 3;
+    }
     return 1;
 }
 //3
@@ -52,10 +58,23 @@
         } repeats:YES];
         return cell;
     }
+    if (indexPath.section == 1) {
+        NormalOptionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"NormalOption" forIndexPath:indexPath];
+        NSArray *imageNames = @[@"geshou.jpg",@"diantai.jpg",@"huiyuanzhuanqu.jpg"];
+        NSArray *titleNames = @[@"歌手",@"电台",@"会员专区"];
+        [cell.optionButton setImage:[UIImage imageNamed:imageNames[indexPath.item]] forState:UIControlStateNormal];
+        cell.optionLabel.text = titleNames[indexPath.item];
+        return cell;
+    }
     return nil;
 }
 //4
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 1) {
+        UICollectionReusableView *footer = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"SectionFooter" forIndexPath:indexPath];
+        footer.backgroundColor = kRGBColor(245, 245, 245, 1.0);
+        return footer;
+    }
     return nil;
 }
 
@@ -69,6 +88,11 @@
             CGFloat height = kWindowW*150/357;
             return CGSizeMake(kWindowW, height);
         }
+            case 1:
+        {
+            CGFloat width = (long)((kWindowW - 2 * 20) / 3);
+            return CGSizeMake(width, width);
+        }
         default:
             break;
     }
@@ -76,6 +100,9 @@
 }
 //6
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
+    if (section == 1) {
+        return UIEdgeInsetsMake(0, 20, 0, 20);
+    }
     return UIEdgeInsetsZero;
 }
 //7
@@ -92,7 +119,11 @@
 }
 //10
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section{
-    return CGSizeZero;
+    if (section == 0) {
+        return CGSizeZero;
+    }
+    return CGSizeMake(0, 5);
+    
 }
 
 #pragma mark - iCarouselDelegate,iCarouselDataSource 协议方法
