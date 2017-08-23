@@ -43,6 +43,8 @@
 		BEB37E4C1EA8A8D000FE155F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB37E4B1EA8A8D000FE155F /* ViewController.m */; };
 		BEB37E651EADF37A00FE155F /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB37E641EADF37A00FE155F /* BaseViewModel.m */; };
 		BEB37E991EAF4E7900FE155F /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB37E981EAF4E7900FE155F /* libsqlite3.0.tbd */; };
+		BECCDB421F4C2D7500F006C2 /* AdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BECCDB411F4C2D7500F006C2 /* AdCell.m */; };
+		BECCDB451F4C309300F006C2 /* RecommendationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BECCDB441F4C309300F006C2 /* RecommendationViewController.m */; };
 		F400F60A8ADE41586FE89506 /* libPods-MyProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6211ADE1C455B4ABF3B8907 /* libPods-MyProject.a */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +119,10 @@
 		BEB37E961EAF410200FE155F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		BEB37E971EAF410200FE155F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		BEB37E981EAF4E7900FE155F /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		BECCDB401F4C2D7500F006C2 /* AdCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdCell.h; sourceTree = "<group>"; };
+		BECCDB411F4C2D7500F006C2 /* AdCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdCell.m; sourceTree = "<group>"; };
+		BECCDB431F4C309300F006C2 /* RecommendationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendationViewController.h; sourceTree = "<group>"; };
+		BECCDB441F4C309300F006C2 /* RecommendationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendationViewController.m; sourceTree = "<group>"; };
 		D6211ADE1C455B4ABF3B8907 /* libPods-MyProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -243,6 +249,8 @@
 		BE76E1751F44251600E28B17 /* 推荐 */ = {
 			isa = PBXGroup;
 			children = (
+				BECCDB431F4C309300F006C2 /* RecommendationViewController.h */,
+				BECCDB441F4C309300F006C2 /* RecommendationViewController.m */,
 			);
 			path = "推荐";
 			sourceTree = "<group>";
@@ -332,6 +340,8 @@
 		BE76E1A61F443EE900E28B17 /* 推荐 */ = {
 			isa = PBXGroup;
 			children = (
+				BECCDB401F4C2D7500F006C2 /* AdCell.h */,
+				BECCDB411F4C2D7500F006C2 /* AdCell.m */,
 			);
 			path = "推荐";
 			sourceTree = "<group>";
@@ -641,6 +651,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BECCDB451F4C309300F006C2 /* RecommendationViewController.m in Sources */,
 				BEB37DC31EA762AC00FE155F /* BaseNetManager.m in Sources */,
 				BE76E18A1F442C9F00E28B17 /* MusicMenuViewController.m in Sources */,
 				BE76E1BA1F4593F600E28B17 /* KingSectionHeaderView.m in Sources */,
@@ -653,6 +664,7 @@
 				BEB37E4C1EA8A8D000FE155F /* ViewController.m in Sources */,
 				BEB37DA21EA760C200FE155F /* AppDelegate.m in Sources */,
 				BE0514631EBC30D2005A90B5 /* NSObject+Common.m in Sources */,
+				BECCDB421F4C2D7500F006C2 /* AdCell.m in Sources */,
 				BE76E1B11F453A3200E28B17 /* ChartsDetailCell.m in Sources */,
 				BE76E1B41F45462900E28B17 /* ChartsDetailViewController.m in Sources */,
 				BE0514651EBC30D2005A90B5 /* NSString+QRCode.m in Sources */,

@@ -10,6 +10,7 @@
 #import "ChartsViewController.h"
 #import "SongListViewController.h"
 #import "KSongViewController.h"
+#import "RecommendationViewController.h"
 
 @interface MusicMenuViewController ()
 
@@ -31,7 +32,7 @@
         self.titleColorSelected = kRGBColor(24, 190, 254, 1);
         self.progressWidth = 36;
         self.progressHeight = 3;
-        self.selectIndex = 3;
+        self.selectIndex = 0;
     }
     return self;
 }
@@ -47,12 +48,13 @@
     switch (index) {
         case 0:
         {
-            UIViewController *vc = [UIViewController new];
-            vc.view.backgroundColor = [UIColor whiteColor];
+            //集合视图控制器创建
+            RecommendationViewController *vc = [[RecommendationViewController alloc]initWithCollectionViewLayout:[UICollectionViewFlowLayout new]];
             return vc;
         }
         case 1:
         {
+            //普通控制器创建
             SongListViewController *vc = [SongListViewController new];
             return vc;
         }
