@@ -9,6 +9,8 @@
 #import "RecommendationViewController.h"
 #import "AdCell.h"
 #import "NormalOptionCell.h"
+#import "SectionHeaderView.h"
+#import "ItemCell.h"
 
 @interface RecommendationViewController ()<UICollectionViewDelegateFlowLayout,iCarouselDelegate,iCarouselDataSource>
 @property (nonatomic, strong) UIPageControl *pc;
@@ -23,20 +25,26 @@
     self.collectionView.backgroundColor = [UIColor whiteColor];
     //注册每个分区的单元格类型及头、脚视图
     [self.collectionView registerClass:[AdCell class] forCellWithReuseIdentifier:@"AdCell"];
-    [self.collectionView registerNib:[UINib nibWithNibName:@"NormalOptionCell" bundle:nil] forCellWithReuseIdentifier:@"NormalOption"];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"NormalOptionCell" bundle:nil] forCellWithReuseIdentifier:@"NormalOptionCell"];
     [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"SectionFooter"];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"SectionHeaderView" bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"SectionHeaderView"];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"ItemCell" bundle:nil] forCellWithReuseIdentifier:@"ItemCell"];
+    self.collectionView.contentInset = UIEdgeInsetsMake(0, 0, 44, 0);
 
 }
 
 #pragma mark <UICollectionViewDataSource>
 //1
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 2;
+    return 3;
 }
 //2
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     if (section == 1) {
         return 3;
+    }
+    if (section == 2) {
+        return 6;
     }
     return 1;
 }
@@ -59,11 +67,17 @@
         return cell;
     }
     if (indexPath.section == 1) {
-        NormalOptionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"NormalOption" forIndexPath:indexPath];
+        NormalOptionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"NormalOptionCell" forIndexPath:indexPath];
         NSArray *imageNames = @[@"geshou.jpg",@"diantai.jpg",@"huiyuanzhuanqu.jpg"];
         NSArray *titleNames = @[@"歌手",@"电台",@"会员专区"];
         [cell.optionButton setImage:[UIImage imageNamed:imageNames[indexPath.item]] forState:UIControlStateNormal];
         cell.optionLabel.text = titleNames[indexPath.item];
+        return cell;
+    }
+    if (indexPath.section == 2) {
+        ItemCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ItemCell" forIndexPath:indexPath];
+        cell.imageView.image = [UIImage imageNamed:@"gedan7.jpg"];
+        cell.titleLabel.text = @"听冬天的飘雪，寄片片相思";
         return cell;
     }
     return nil;
@@ -74,6 +88,18 @@
         UICollectionReusableView *footer = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"SectionFooter" forIndexPath:indexPath];
         footer.backgroundColor = kRGBColor(245, 245, 245, 1.0);
         return footer;
+    }
+    if (indexPath.section == 2) {//头视图
+        if (kind == UICollectionElementKindSectionHeader) {
+            SectionHeaderView *header = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"SectionHeaderView" forIndexPath:indexPath];
+            header.iconImageView.image = [UIImage imageNamed:@"r01"];
+            header.titleLabel.text = @"歌单推荐";
+            return header;
+        }else{//脚视图
+            UICollectionReusableView *footer = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"SectionFooter" forIndexPath:indexPath];
+            footer.backgroundColor = kRGBColor(245, 245, 245, 1.0);
+            return footer;
+        }
     }
     return nil;
 }
@@ -88,10 +114,15 @@
             CGFloat height = kWindowW*150/357;
             return CGSizeMake(kWindowW, height);
         }
-            case 1:
+        case 1:
         {
             CGFloat width = (long)((kWindowW - 2 * 20) / 3);
             return CGSizeMake(width, width);
+        }
+        case 2:
+        {
+            CGFloat width = (long)((kWindowW - 2 * 20 - 2*10)/3);
+            return CGSizeMake(width, width+60);
         }
         default:
             break;
@@ -100,7 +131,7 @@
 }
 //6
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
-    if (section == 1) {
+    if (section == 1 || section == 2) {
         return UIEdgeInsetsMake(0, 20, 0, 20);
     }
     return UIEdgeInsetsZero;
@@ -111,10 +142,16 @@
 }
 //8
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
+    if (section == 2) {
+        return 10;
+    }
     return 0;
 }
 //9
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
+    if (section == 2) {
+        return CGSizeMake(0, 60);
+    }
     return CGSizeZero;
 }
 //10

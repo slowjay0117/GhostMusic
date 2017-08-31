@@ -8,6 +8,7 @@
 
 #import "TopMenuViewController.h"
 #import "MusicMenuViewController.h"
+#import "RadioViewController.h"
 
 @interface TopMenuViewController ()
 
@@ -70,8 +71,7 @@
         }
         case 2:
         {
-            UIViewController *vc1 = [UIViewController new];
-            vc1.view.backgroundColor = [UIColor purpleColor];
+            RadioViewController *vc1 = [RadioViewController new];
             return vc1;
         }
         default:
