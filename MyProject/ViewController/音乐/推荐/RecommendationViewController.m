@@ -11,6 +11,7 @@
 #import "NormalOptionCell.h"
 #import "SectionHeaderView.h"
 #import "ItemCell.h"
+#import "RadioViewController.h"
 
 @interface RecommendationViewController ()<UICollectionViewDelegateFlowLayout,iCarouselDelegate,iCarouselDataSource>
 @property (nonatomic, strong) UIPageControl *pc;
@@ -70,7 +71,7 @@
         NormalOptionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"NormalOptionCell" forIndexPath:indexPath];
         NSArray *imageNames = @[@"geshou.jpg",@"diantai.jpg",@"huiyuanzhuanqu.jpg"];
         NSArray *titleNames = @[@"歌手",@"电台",@"会员专区"];
-        [cell.optionButton setImage:[UIImage imageNamed:imageNames[indexPath.item]] forState:UIControlStateNormal];
+        [cell.optionImageView setImage:[[UIImage imageNamed:imageNames[indexPath.item]] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate]];
         cell.optionLabel.text = titleNames[indexPath.item];
         return cell;
     }
@@ -102,6 +103,14 @@
         }
     }
     return nil;
+}
+
+//选中项后的响应
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 1 && indexPath.item == 1) {
+        RadioViewController *vc = [RadioViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 #pragma mark - UICollectionViewDelegateFlowLayout 协议方法

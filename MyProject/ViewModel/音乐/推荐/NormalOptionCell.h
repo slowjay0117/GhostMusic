@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface NormalOptionCell : UICollectionViewCell
-@property (weak, nonatomic) IBOutlet UIButton *optionButton;
+@property (weak, nonatomic) IBOutlet UIImageView *optionImageView;
 @property (weak, nonatomic) IBOutlet UILabel *optionLabel;
 
 @end

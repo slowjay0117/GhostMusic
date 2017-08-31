@@ -20,18 +20,15 @@
                 <rect key="frame" x="0.0" y="0.0" width="263" height="263"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nf-QM-ZEO">
-                        <rect key="frame" x="79" y="79" width="105.5" height="105.5"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wQY-4b-sNJ">
+                        <rect key="frame" x="78.5" y="78.5" width="105" height="105"/>
+                        <color key="tintColor" red="0.36078431372549019" green="0.94117647058823528" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="6Nf-QM-ZEO" secondAttribute="height" multiplier="1:1" id="OuN-xG-c69"/>
+                            <constraint firstAttribute="width" secondItem="wQY-4b-sNJ" secondAttribute="height" multiplier="1:1" id="BlZ-M0-9wl"/>
                         </constraints>
-                        <color key="tintColor" red="0.094117647058823528" green="0.74509803921568629" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <state key="normal">
-                            <color key="titleColor" red="0.094117647058823528" green="0.74509803921568629" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        </state>
-                    </button>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKJ-7d-Ycq" colorLabel="IBBuiltInLabel-Red">
-                        <rect key="frame" x="0.0" y="187.5" width="263" height="16"/>
+                        <rect key="frame" x="0.0" y="185.5" width="263" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="0.094117647058823528" green="0.74509803921568629" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
@@ -40,15 +37,15 @@
             </view>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="dKJ-7d-Ycq" secondAttribute="trailing" id="4Tp-lg-bYW"/>
-                <constraint firstItem="6Nf-QM-ZEO" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="KIV-VO-jhP"/>
-                <constraint firstItem="dKJ-7d-Ycq" firstAttribute="top" secondItem="6Nf-QM-ZEO" secondAttribute="bottom" constant="3" id="NZT-5U-BKV"/>
-                <constraint firstItem="6Nf-QM-ZEO" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Snc-LE-8rI"/>
+                <constraint firstItem="wQY-4b-sNJ" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.4" id="84e-2X-hoC"/>
+                <constraint firstItem="wQY-4b-sNJ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Dax-Ci-Jex"/>
+                <constraint firstItem="dKJ-7d-Ycq" firstAttribute="top" secondItem="wQY-4b-sNJ" secondAttribute="bottom" constant="2" id="cKj-4D-3Ba"/>
                 <constraint firstItem="dKJ-7d-Ycq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rCJ-QD-pwQ"/>
-                <constraint firstItem="6Nf-QM-ZEO" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.4" id="rHy-Du-2Ch"/>
+                <constraint firstItem="wQY-4b-sNJ" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="zXz-Ut-jIx"/>
             </constraints>
             <size key="customSize" width="263" height="263"/>
             <connections>
-                <outlet property="optionButton" destination="6Nf-QM-ZEO" id="Ryp-qp-0TZ"/>
+                <outlet property="optionImageView" destination="wQY-4b-sNJ" id="bKl-F3-hR7"/>
                 <outlet property="optionLabel" destination="dKJ-7d-Ycq" id="DUT-uO-hVm"/>
             </connections>
             <point key="canvasLocation" x="27.5" y="-12.5"/>
